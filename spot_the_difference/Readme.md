@@ -45,10 +45,10 @@ Looking through the rest of the directories. Under .config there is a secret dir
 
 ![screenshot](2020-09-19_05-10.png)
 
-After decoding a few of them which ended up being just garbage data, I used this command to loop through each one of them and grep out any word longer than 6 chars.
+After decoding a few of them which ended up being just garbage data, I used this command to loop through each one of them and grep out any word longer than 5 chars.
 
 ```sh
-for i in $(find . -type f); do cat $i | base64 -d | strings | grep -w '\w\{6,50\}' ;done
+for i in $(find . -type f); do cat $i | base64 -d | strings | grep -w '\w\{5,50\}' ;done
 ```
 
 ![screenshot2](2020-09-19_05-13.png)
