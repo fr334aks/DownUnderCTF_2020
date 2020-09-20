@@ -1,5 +1,7 @@
 # Spot the Difference
 
+Category: forensics
+
 Challenge Description:
 
 ![screenshot1](2020-09-19_05-07.png)
@@ -40,6 +42,8 @@ Based on the description we are supposed to use steghide to extract information 
 After looping through each of them with an empty passphrase there was no luck. 
 
 Looking through the rest of the directories. Under .config there is a secret directory with a lot of txt files with base64 encoded content. 
+
+![screenshot](2020-09-19_05-10.png)
 
 After decoding a few of them which ended up being just garbage data, I used this command to loop through each one of them and grep out any word longer than 6 chars.
 
