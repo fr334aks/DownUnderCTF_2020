@@ -53,7 +53,7 @@ for i in $(find . -type f); do cat $i | base64 -d | strings | grep -w '\w\{6,50\
 
 ![screenshot2](2020-09-19_05-13.png)
 
-Then using that long string as the passphrase with steghide with this command resulted in get the flag in SecretMessage.txt that was hidded in one of the many images.
+Then using that 1234IsASecurePassword as the passphrase with steghide with the command below resulted in getting the flag in SecretMessage.txt that was hidden in one of the many images.
 
 ```sh
 for i in $(find . -type f); do steghide extract -q -p '1234IsASecurePassword' -sf $i;done
