@@ -9,7 +9,7 @@ The binary was using gets for user input that is vulnerable to a `BOF` attack an
 
 ![](https://i.imgur.com/jiyXWy2.png)
 
-No PIE and stack cookie therefore we are ready to go \0/.
+No PIE and stack cookie therefore we are ready to go \0/.[exploit.py](exploit.py)
 
 ## Flag
 `DUCTF{h0w_d1d_you_c4LL_That_funCT10n?!?!?}`
