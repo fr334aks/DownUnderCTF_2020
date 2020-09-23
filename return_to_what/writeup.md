@@ -11,7 +11,7 @@
 
 ## Challenge Overview
 
-This challenge was a `return to libc` challenge similiar to [shellthis](shell_this) but this time we do not have a function to return to. We have to be creative to spawn a shell and read the flag. We are not provided with the libc version or any libc file. We therefore have to leak the libc address and look it from the libc database to get the libc version.
+This challenge was a `return to libc` challenge similiar to [shellthis](https://github.com/fr334aks/DownUnderCTF_2020/blob/master/shell_this) but this time we do not have a function to return to. We have to be creative to spawn a shell and read the flag. We are not provided with the libc version or any libc file. We therefore have to leak the libc address and look it from the libc database to get the libc version.
 
 ## Exploit
 
