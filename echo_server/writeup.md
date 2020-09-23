@@ -11,7 +11,8 @@
 > `nc chal.duc.tf 30001`
 >
 >Hint - The challenge server is running Ubuntu 18.04.
-
+>
+> **Attachment**: [echos](echos)
 ## Challenge Overview
 
 The Binary is a 64-bit elf exceutable that has a `FSB` and that is a loop that exits after three inputs. The binary has all protections enabled :(
